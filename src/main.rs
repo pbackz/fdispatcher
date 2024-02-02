@@ -11,9 +11,9 @@ const WAV: &str = "wav";
 const PDF: &str = "pdf";
 
 fn main() {
-    let cmd = Command::new("fdispatcher")
+    let cmd = Command::new("fd")
         .about("A File dispatcher based on extension")
-        .bin_name("fdispatcher")
+        .bin_name("fd")
         .subcommand_required(true)
         .subcommands(vec![
             create_subcommand(MP4),

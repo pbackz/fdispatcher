@@ -3,10 +3,10 @@
 ## Help
 
 ```bash
-./fdispatcher help                                                                                               (base)
+./fd help                                                                                               (base)
 A File dispatcher based on extension
 
-Usage: fdispatcher <COMMAND>
+Usage: fd <COMMAND>
 
 Commands:
 mp4   Perform .mp4 file extension move
@@ -22,10 +22,10 @@ Options:
 ```
 
 ```bash
-./fdispatcher help mp4                                                                                           (base)
+./fd help mp4                                                                                           (base)
 Perform .mp4 file extension move
 
-Usage: fdispatcher mp4 --source-dir <source-dir> --target-dir <target-dir>
+Usage: fd mp4 --source-dir <source-dir> --target-dir <target-dir>
 
 Options:
 -s, --source-dir <source-dir>  The source directory where files will be processed recursively
@@ -36,7 +36,7 @@ Options:
 ## Usage
 
 ```bash
-./fdispatcher wav -s ~/tmp/ -t .
+./fd wav -s ~/tmp/ -t .
 Moved "/home/solidsnaakke/tmp/ondeanda.wav" to "./ondeanda.wav"
 Moved "/home/solidsnaakke/tmp/lofi001.wav" to "./lofi001.wav"
 Moved "/home/solidsnaakke/tmp/musicgen_out2.wav" to "./musicgen_out2.wav"
@@ -46,20 +46,20 @@ Moved "/home/solidsnaakke/tmp/reggae002.wav" to "./reggae002.wav"
 ```
 
 ```bash
-./fdispatcher mp4 -s ~/tmp/ -t .
+./fd mp4 -s ~/tmp/ -t .
 Moved "/home/solidsnaakke/tmp/travel_trip.mp4" to "./travel_trip.mp4"
 Moved "/home/solidsnaakke/tmp/20240201052005.mp4" to "./20240201052005.mp4"
 ```
 
 ```bash
-ll fdispatcher/outputs/test/*.png | wc -l
+ll fd/outputs/test/*.png | wc -l
 6558
 
-time fdispatcher png -s fdispatcher/outputs/test/ -t ~/test/ 
+time fd png -s fd/outputs/test/ -t ~/test/ 
 ...
-Moved "../article-generator/fdispatcher/outputs/test/20240201044043_000000717.png" to "/home/solidsnaakke/tmp/20240201044043_000000717.png"
-Moved "../article-generator/fdispatcher/outputs/test/20240201044043_000000718.png" to "/home/solidsnaakke/tmp/20240201044043_000000718.png"
-Moved "../article-generator/fdispatcher/outputs/test/20240201044043_000000719.png" to "/home/solidsnaakke/tmp/20240201044043_000000719.png"
+Moved "../article-generator/fd/outputs/test/20240201044043_000000717.png" to "/home/solidsnaakke/tmp/20240201044043_000000717.png"
+Moved "../article-generator/fd/outputs/test/20240201044043_000000718.png" to "/home/solidsnaakke/tmp/20240201044043_000000718.png"
+Moved "../article-generator/fd/outputs/test/20240201044043_000000719.png" to "/home/solidsnaakke/tmp/20240201044043_000000719.png"
 
 ________________________________________________________
 Executed in  248.52 millis    fish           external
